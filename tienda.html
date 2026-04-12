@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tienda Miluca&Co — 16+ chaquetas de cuero restauradas y vintage. Piezas únicas desde 60€." />
+  <title>Tienda — Miluca&Co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="images/logo-milucandco-blanco.png" alt="Miluca&amp;Co" /></a>
+      <button class="nav-toggle" aria-label="Abrir menú" id="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tienda.html" class="active">Tienda</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="cuidado.html">Cuidado</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="tienda.html" class="nav-cta">Ver Tienda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <p class="section-eyebrow reveal">Colección</p>
+      <h1 class="reveal">La Tienda</h1>
+      <p class="reveal">Cada pieza es única. Restaurada a mano, sin fórmulas, con tiempo.</p>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <div class="shop-controls">
+    <div class="container shop-controls-inner">
+      <div class="shop-filters">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="restaurada">Restauradas</button>
+        <button class="filter-btn" data-filter="vintage">Vintage</button>
+        <button class="filter-btn" data-filter="especial">Edición Especial</button>
+      </div>
+      <div class="shop-sort">
+        <label for="sort-select">Ordenar:</label>
+        <select id="sort-select">
+          <option value="default">Destacadas</option>
+          <option value="price-asc">Precio: menor a mayor</option>
+          <option value="price-desc">Precio: mayor a menor</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCTS GRID -->
+  <div class="shop-grid">
+    <div class="container">
+      <div class="shop-products-grid">
+
+        <!-- 1 -->
+        <div class="product-card shop-product-card reveal" data-category="especial" data-price="390">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/avirex-marron.jpeg');background-size:cover;background-position:center top" id="prod-avirex-marron"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/avirex-marron.jpeg" data-name="Chaqueta Avirex Marron" data-type="Vintage - Restaurada" data-badge="Especial" data-price="390 EUR" data-desc="Iconica chaqueta Avirex en cuero marron restaurada a mano. Tratamiento profundo de nutricion e hidratacion. Lining original en perfecto estado.">Ver Pieza</button></div>
+            <span class="product-badge">Especial</span>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Avirex Marrón</h3>
+            <p class="product-type">Vintage · Restaurada</p>
+            <p class="product-price">390 €</p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="product-card shop-product-card reveal" data-category="especial" data-price="350">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/nfl.jpeg');background-size:cover;background-position:center top" id="prod-nfl"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/nfl.jpeg" data-name="Chaqueta NFL" data-type="Coleccion Especial" data-badge="Unico" data-price="350 EUR" data-desc="Chaqueta NFL de cuero autentico, restaurada con tecnica de tenido selectivo. Parches originales conservados. Pieza de coleccion.">Ver Pieza</button></div>
+            <span class="product-badge">Único</span>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta NFL</h3>
+            <p class="product-type">Colección Especial</p>
+            <p class="product-price">350 €</p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="product-card shop-product-card reveal" data-category="especial" data-price="280">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/motero-valentino.jpeg');background-size:cover;background-position:center top" id="prod-motero-valentino"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/motero-valentino.jpeg" data-name="Chaqueta Motero Valentino Rossi" data-type="Edicion Coleccionista" data-badge="Coleccionista" data-price="280 EUR" data-desc="Chaqueta de motorista con emblema de Valentino Rossi. Cuero genuino restaurado. Parches y detalles originales intactos.">Ver Pieza</button></div>
+            <span class="product-badge">Coleccionista</span>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Motero Valentino Rossi</h3>
+            <p class="product-type">Edición Coleccionista</p>
+            <p class="product-price">280 €</p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="product-card shop-product-card reveal" data-category="restaurada" data-price="250">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/motero-aguila.jpeg');background-size:cover;background-position:center top" id="prod-motero-aguila"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/motero-aguila.jpeg" data-name="Chaqueta Motero Aguila" data-type="Restaurada" data-badge="" data-price="250 EUR" data-desc="Chaqueta de motorista con bordado de aguila. Cuero negro de alta calidad restaurado a mano. Proceso de limpieza profunda y acondicionamiento.">Ver Pieza</button></div>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Motero Águila</h3>
+            <p class="product-type">Restaurada</p>
+            <p class="product-price">250 €</p>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="product-card shop-product-card reveal" data-category="restaurada" data-price="240">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/bomber-marron.jpeg');background-size:cover;background-position:center top" id="prod-bomber-marron"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/bomber-marron.jpeg" data-name="Chaqueta Bomber Marron" data-type="Vintage - Restaurada" data-badge="" data-price="240 EUR" data-desc="Bomber clasica en cuero marron. Restauracion completa: limpieza, hidratacion y tenido selectivo. Estilo vintage inconfundible.">Ver Pieza</button></div>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Bomber Marrón</h3>
+            <p class="product-type">Vintage · Restaurada</p>
+            <p class="product-price">240 €</p>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="product-card shop-product-card reveal" data-category="restaurada" data-price="180">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/biker-crop-negra.jpeg');background-size:cover;background-position:center top" id="prod-biker-crop-negra"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/biker-crop-negra.jpeg" data-name="Chaqueta Biker Crop Negra" data-type="Restaurada" data-badge="" data-price="180 EUR" data-desc="Biker crop en cuero negro con hebillas y cremalleras originales. Corte cropped muy actual. Restaurada con limpieza profunda.">Ver Pieza</button></div>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Biker Crop Negra</h3>
+            <p class="product-type">Restaurada</p>
+            <p class="product-price">180 €</p>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="product-card shop-product-card reveal" data-category="vintage" data-price="160">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/ante-zorro.jpeg');background-size:cover;background-position:center top" id="prod-ante-zorro"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/ante-zorro.jpeg" data-name="Chaqueta Ante y Zorro" data-type="Vintage" data-badge="" data-price="160 EUR" data-desc="Chaqueta de ante natural con detalles de zorro. Pieza vintage con caracter unico. Tratamiento especial para ante: limpieza en seco y nutricion.">Ver Pieza</button></div>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Ante y Zorro</h3>
+            <p class="product-type">Vintage</p>
+            <p class="product-price">160 €</p>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="product-card shop-product-card reveal" data-category="restaurada" data-price="160">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/perfecto-flecos.jpeg');background-size:cover;background-position:center top" id="prod-perfecto-flecos"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/perfecto-flecos.jpeg" data-name="Chaqueta Perfecto Flecos" data-type="Restaurada" data-badge="" data-price="160 EUR" data-desc="Perfecto clasico con flecos en cuero genuino. Restaurada con cuidado especial de los flecos para preservar su caida natural.">Ver Pieza</button></div>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Perfecto Flecos</h3>
+            <p class="product-type">Restaurada</p>
+            <p class="product-price">160 €</p>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="product-card shop-product-card reveal" data-category="restaurada" data-price="150">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/camel-marron.jpeg');background-size:cover;background-position:center top" id="prod-camel-marron"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/camel-marron.jpeg" data-name="Chaqueta Camel Marron" data-type="Restaurada" data-badge="" data-price="150 EUR" data-desc="Chaqueta camel en cuero de vaqueta marron calido. Corte recto y elegante. Restauracion con tenido y nutricion.">Ver Pieza</button></div>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Camel Marrón</h3>
+            <p class="product-type">Restaurada</p>
+            <p class="product-price">150 €</p>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="product-card shop-product-card reveal" data-category="restaurada" data-price="120">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/perfecto-marron.jpeg');background-size:cover;background-position:center top" id="prod-perfecto-marron"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/perfecto-marron.jpeg" data-name="Chaqueta Perfecto Marron" data-type="Restaurada" data-badge="" data-price="120 EUR" data-desc="Perfecto clasico en cuero marron. Diseno intemporal. Limpieza profunda, desinfeccion y nutricion con cremas de alta gama.">Ver Pieza</button></div>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Perfecto Marrón</h3>
+            <p class="product-type">Restaurada</p>
+            <p class="product-price">120 €</p>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="product-card shop-product-card reveal" data-category="restaurada" data-price="120">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/perfecto-negra.jpeg');background-size:cover;background-position:center top" id="prod-perfecto-negra"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/perfecto-negra.jpeg" data-name="Chaqueta Perfecto Negra" data-type="Restaurada" data-badge="" data-price="120 EUR" data-desc="Perfecto en cuero negro. Un clasico devuelto a su mejor version con limpieza profunda y acondicionamiento del cuero.">Ver Pieza</button></div>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Perfecto Negra</h3>
+            <p class="product-type">Restaurada</p>
+            <p class="product-price">120 €</p>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="product-card shop-product-card reveal" data-category="vintage" data-price="90">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/aviador-marron.jpeg');background-size:cover;background-position:center top" id="prod-aviador-marron"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/aviador-marron.jpeg" data-name="Chaqueta Aviador Marron" data-type="Vintage - Restaurada" data-badge="" data-price="90 EUR" data-desc="Chaqueta de aviador en cuero y shearling marron. Estilo anos 40 autentico. Restauracion de cuero exterior y limpieza del shearling.">Ver Pieza</button></div>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Aviador Marrón</h3>
+            <p class="product-type">Vintage · Restaurada</p>
+            <p class="product-price">90 €</p>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="product-card shop-product-card reveal" data-category="vintage" data-price="90">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/shearling-marron.jpeg');background-size:cover;background-position:center top" id="prod-shearling-marron"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/shearling-marron.jpeg" data-name="Chaqueta Shearling Marron" data-type="Vintage" data-badge="" data-price="90 EUR" data-desc="Chaqueta de piel de oveja shearling marron natural. Calida y autentica. Limpieza especializada y nutricion del cuero exterior.">Ver Pieza</button></div>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Shearling Marrón</h3>
+            <p class="product-type">Vintage</p>
+            <p class="product-price">90 €</p>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="product-card shop-product-card reveal" data-category="vintage" data-price="80">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/bomber-negra.jpeg');background-size:cover;background-position:center top" id="prod-bomber-negra"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/bomber-negra.jpeg" data-name="Chaqueta Bomber Negra" data-type="Vintage" data-badge="" data-price="80 EUR" data-desc="Bomber en cuero negro con interior de saten. Clasico indestructible. Restaurada con limpieza profunda y tratamiento de cuero negro.">Ver Pieza</button></div>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Bomber Negra</h3>
+            <p class="product-type">Vintage</p>
+            <p class="product-price">80 €</p>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="product-card shop-product-card reveal" data-category="vintage" data-price="80">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/ante-flecos-western.jpeg');background-size:cover;background-position:center top" id="prod-ante-flecos-western"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/ante-flecos-western.jpeg" data-name="Chaqueta Ante Flecos Western" data-type="Vintage" data-badge="" data-price="80 EUR" data-desc="Chaqueta western en ante con flecos largos. Espiritu boho y genuinamente vintage. Limpieza en seco especializada para ante.">Ver Pieza</button></div>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Ante Flecos Western</h3>
+            <p class="product-type">Vintage</p>
+            <p class="product-price">80 €</p>
+          </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="product-card shop-product-card reveal" data-category="vintage" data-price="60">
+          <div class="product-img-wrap">
+            <div class="product-img" style="background-image:url('images/ante-vivos.jpeg');background-size:cover;background-position:center top" id="prod-ante-vivos"></div>
+            <div class="product-overlay"><button class="product-btn" data-img="images/ante-vivos.jpeg" data-name="Chaqueta Ante Vivos" data-type="Vintage" data-badge="" data-price="60 EUR" data-desc="Chaqueta de ante con vivos en color contrastado. Sencilla y con mucho caracter. Perfecta como primera pieza vintage.">Ver Pieza</button></div>
+          </div>
+          <div class="product-info">
+            <h3>Chaqueta Ante Vivos</h3>
+            <p class="product-type">Vintage</p>
+            <p class="product-price">60 €</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PRODUCT MODAL ──────────────────────────────────── -->
+  <div class="modal-overlay" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close" aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+      <div class="modal-img-col">
+        <div class="modal-img" id="modal-img"></div>
+      </div>
+      <div class="modal-info-col">
+        <p class="modal-badge" id="modal-badge"></p>
+        <h2 class="modal-title" id="modal-title"></h2>
+        <p class="modal-type" id="modal-type"></p>
+        <p class="modal-desc" id="modal-desc"></p>
+        <p class="modal-price" id="modal-price"></p>
+        <div class="modal-actions">
+          <a id="modal-whatsapp" href="#" target="_blank" rel="noopener" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L.057 23.428a.5.5 0 00.515.572l5.701-1.494A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.892 0-3.665-.519-5.18-1.424l-.37-.22-3.83 1.004 1.022-3.735-.242-.385A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Consultar por WhatsApp
+          </a>
+          <a href="contacto.html" class="btn btn-outline">Enviar Mensaje</a>
+        </div>
+        <p class="modal-note">Pieza única · Envíos a toda España · Consulta envíos internacionales</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA STRIP -->
+  <section class="cta-banner">
+    <div class="cta-inner reveal">
+      <h2>¿Tienes alguna duda<br /><em>sobre una pieza?</em></h2>
+      <p>Contáctanos y te asesoramos sin compromiso.</p>
+      <a href="contacto.html" class="btn btn-primary btn-lg">Escribir Ahora</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo"><img src="images/logo-milucandco-blanco.png" alt="Miluca&amp;Co" /></a>
+        <p>Chaquetas de cuero con historia,<br />cuidadas para seguir acompañándote.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/milucandco" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://tiktok.com/@milucandco" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="cuidado.html">Cuidado de Prendas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+34662062157">+34 662 062 157</a></li>
+          <li><a href="mailto:contacto@milucandco.com">contacto@milucandco.com</a></li>
+          <li>Lun — Dom: 10:00 – 18:00</li>
+        </ul>
+      </div>
+      <div class="footer-legal">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Política de Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Miluca&amp;Co. Todos los derechos reservados.</p>
+      <p class="footer-credit">Diseño y desarrollo por <a href="https://portfolio-jesusgomez.vercel.app/" target="_blank" rel="noopener">Jesús Gómez</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

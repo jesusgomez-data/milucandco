@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contacta con Miluca&Co — +34 662 062 157 · contacto@milucandco.com · Lun-Dom 10:00-18:00" />
+  <title>Contacto — Miluca&Co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="images/logo-milucandco-blanco.png" alt="Miluca&amp;Co" /></a>
+      <button class="nav-toggle" aria-label="Abrir menú" id="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="cuidado.html">Cuidado</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><a href="tienda.html" class="nav-cta">Ver Tienda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <p class="section-eyebrow reveal">Hablemos</p>
+      <h1 class="reveal">Contacto</h1>
+      <p class="reveal">Cualquier duda sobre una pieza, una consulta de cuidado<br />o simplemente un hola — estamos aquí.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section class="contact-content">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- INFO -->
+        <div class="contact-info">
+          <div class="contact-item reveal">
+            <h4>Teléfono</h4>
+            <a href="tel:+34662062157">+34 662 062 157</a>
+          </div>
+          <div class="contact-item reveal">
+            <h4>Email</h4>
+            <a href="mailto:contacto@milucandco.com">contacto@milucandco.com</a>
+          </div>
+          <div class="contact-item reveal">
+            <h4>Horario</h4>
+            <p>Lunes a Domingo</p>
+            <p>10:00 – 18:00</p>
+          </div>
+          <div class="contact-item reveal">
+            <h4>Redes Sociales</h4>
+            <a href="https://instagram.com/milucandco" target="_blank" rel="noopener">@milucandco en Instagram</a>
+            <a href="https://tiktok.com/@milucandco" target="_blank" rel="noopener" style="margin-top:0.5rem">@milucandco en TikTok</a>
+          </div>
+
+          <!-- FAQ Mini -->
+          <div class="contact-item reveal" style="margin-top:1rem">
+            <h4>Preguntas Frecuentes</h4>
+            <div style="display:flex;flex-direction:column;gap:1.25rem;margin-top:0.75rem">
+              <div>
+                <p style="color:var(--cream);font-size:0.92rem;margin-bottom:0.35rem">¿Hacéis envíos?</p>
+                <p style="font-size:0.85rem">Sí, enviamos a toda España y consultamos envíos internacionales.</p>
+              </div>
+              <div>
+                <p style="color:var(--cream);font-size:0.92rem;margin-bottom:0.35rem">¿Aceptáis encargos de restauración?</p>
+                <p style="font-size:0.85rem">Escríbenos con fotos de tu pieza y lo valoramos sin compromiso.</p>
+              </div>
+              <div>
+                <p style="color:var(--cream);font-size:0.92rem;margin-bottom:0.35rem">¿Las piezas incluyen certificado?</p>
+                <p style="font-size:0.85rem">Cada chaqueta lleva su ficha de restauración con el proceso realizado.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form reveal">
+          <h3 style="font-size:1.6rem;margin-bottom:0.5rem;color:var(--cream)">Envíanos un mensaje</h3>
+          <p style="margin-bottom:2rem;font-size:0.9rem">Te respondemos en menos de 24 horas.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="asunto">Asunto *</label>
+              <select id="asunto" name="asunto" required>
+                <option value="" disabled selected>Selecciona un tema</option>
+                <option value="info-pieza">Información sobre una pieza</option>
+                <option value="pedido">Estado de un pedido</option>
+                <option value="restauracion">Encargo de restauración</option>
+                <option value="cuidado">Consulta de cuidado</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" id="privacidad" name="privacidad" required />
+              <label for="privacidad">
+                He leído y acepto la
+                <a href="#" style="color:var(--gold);text-decoration:underline">Política de Privacidad</a>.
+                Mis datos serán tratados únicamente para responder a mi consulta.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL STRIP -->
+  <section class="section" style="background:var(--bg-2);padding-block:4rem">
+    <div class="container" style="text-align:center">
+      <p class="section-eyebrow reveal">Síguenos</p>
+      <h2 class="reveal" style="margin-bottom:2rem">@milucandco</h2>
+      <div class="social-links reveal">
+        <a href="https://instagram.com/milucandco" target="_blank" rel="noopener" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a href="https://tiktok.com/@milucandco" target="_blank" rel="noopener" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          TikTok
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo"><img src="images/logo-milucandco-blanco.png" alt="Miluca&amp;Co" /></a>
+        <p>Chaquetas de cuero con historia,<br />cuidadas para seguir acompañándote.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/milucandco" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://tiktok.com/@milucandco" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="cuidado.html">Cuidado de Prendas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+34662062157">+34 662 062 157</a></li>
+          <li><a href="mailto:contacto@milucandco.com">contacto@milucandco.com</a></li>
+          <li>Lun — Dom: 10:00 – 18:00</li>
+        </ul>
+      </div>
+      <div class="footer-legal">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Política de Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Miluca&amp;Co. Todos los derechos reservados.</p>
+      <p class="footer-credit">Diseño y desarrollo por <a href="https://portfolio-jesusgomez.vercel.app/" target="_blank" rel="noopener">Jesús Gómez</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
