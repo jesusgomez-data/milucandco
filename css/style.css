@@ -1,24 +1,24 @@
 /* ============================================================
    MILUCA&CO — Premium CSS
-   Paleta: Oscuro profundo · Crema cálida · Oro envejecido · Burdeos
+   Paleta: Negro profundo · Blanco puro · Gris editorial
    ============================================================ */
 
 /* ── TOKENS ─────────────────────────────────────────────── */
 :root {
-  --bg:          #0A0907;
-  --bg-2:        #100E0B;
-  --bg-3:        #161310;
-  --surface:     #1C1814;
-  --border:      rgba(201,168,76,0.18);
-  --border-soft: rgba(245,240,232,0.08);
+  --bg:          #080808;
+  --bg-2:        #0F0F0F;
+  --bg-3:        #161616;
+  --surface:     #1A1A1A;
+  --border:      rgba(255,255,255,0.14);
+  --border-soft: rgba(255,255,255,0.07);
 
-  --cream:       #F5F0E8;
-  --cream-dim:   #B8B0A0;
-  --gold:        #C9A84C;
-  --gold-light:  #E2C97E;
-  --burgundy:    #7A1F2E;
-  --leather:     #8B5E3C;
-  --leather-lt:  #A67C52;
+  --cream:       #F0F0F0;
+  --cream-dim:   #999999;
+  --gold:        #FFFFFF;
+  --gold-light:  #DDDDDD;
+  --burgundy:    #222222;
+  --leather:     #555555;
+  --leather-lt:  #888888;
 
   --font-serif:  'Cormorant Garamond', Georgia, serif;
   --font-sans:   'Montserrat', system-ui, sans-serif;
@@ -200,7 +200,7 @@ p { font-size: clamp(0.9rem, 1.2vw, 1rem); color: var(--cream-dim); max-width: 6
 }
 .nav-logo:hover { transform: translateY(-1px); }
 .nav-logo:hover img {
-  filter: invert(1) brightness(1.15) contrast(1.05) drop-shadow(0 2px 14px rgba(201,168,76,0.4));
+  filter: invert(1) brightness(1.15) contrast(1.05) drop-shadow(0 2px 14px rgba(255,255,255,0.25));
 }
 
 .nav-links {
@@ -271,39 +271,39 @@ p { font-size: clamp(0.9rem, 1.2vw, 1rem); color: var(--cream-dim); max-width: 6
 .hero-bg {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse at 70% 50%, rgba(139,94,60,0.18) 0%, transparent 60%),
-    radial-gradient(ellipse at 30% 80%, rgba(122,31,46,0.12) 0%, transparent 55%),
-    linear-gradient(135deg, #100D09 0%, #1A1510 40%, #0F0C09 100%);
+  background-image: url('../images/nfl.jpeg');
+  background-size: cover;
+  background-position: center 20%;
+  background-attachment: fixed;
 }
 
-/* Animated texture lines */
 .hero-bg::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image:
-    repeating-linear-gradient(
-      90deg,
-      rgba(201,168,76,0.025) 0px,
-      rgba(201,168,76,0.025) 1px,
-      transparent 1px,
-      transparent 120px
-    );
+  background: linear-gradient(110deg,
+    rgba(0,0,0,0.82) 0%,
+    rgba(0,0,0,0.48) 55%,
+    rgba(0,0,0,0.72) 100%);
+  z-index: 1;
 }
 
 .hero-bg::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, transparent 60%, var(--bg) 100%);
+  background: linear-gradient(to bottom,
+    transparent 50%,
+    rgba(0,0,0,0.5) 80%,
+    var(--bg) 100%);
+  z-index: 2;
 }
 
-.hero-overlay { position: absolute; inset: 0; }
+.hero-overlay { position: absolute; inset: 0; z-index: 3; }
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 10;
   padding: clamp(1.25rem, 5vw, 4rem);
   padding-top: 8rem;
   max-width: var(--max-w);
@@ -356,6 +356,7 @@ p { font-size: clamp(0.9rem, 1.2vw, 1rem); color: var(--cream-dim); max-width: 6
   position: absolute;
   bottom: 2.5rem;
   left: 50%;
+  z-index: 10;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
@@ -690,7 +691,7 @@ p { font-size: clamp(0.9rem, 1.2vw, 1rem); color: var(--cream-dim); max-width: 6
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, rgba(201,168,76,0.06) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.04) 0%, transparent 70%);
 }
 
 .philosophy-inner { position: relative; z-index: 1; }
@@ -848,8 +849,8 @@ p { font-size: clamp(0.9rem, 1.2vw, 1rem); color: var(--cream-dim); max-width: 6
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 30% 50%, rgba(122,31,46,0.12), transparent 60%),
-    radial-gradient(ellipse at 70% 50%, rgba(201,168,76,0.06), transparent 60%);
+    radial-gradient(ellipse at 30% 50%, rgba(255,255,255,0.03), transparent 60%),
+    radial-gradient(ellipse at 70% 50%, rgba(255,255,255,0.04), transparent 60%);
 }
 
 .cta-inner { position: relative; z-index: 1; }
@@ -884,7 +885,7 @@ p { font-size: clamp(0.9rem, 1.2vw, 1rem); color: var(--cream-dim); max-width: 6
   transition: filter 0.4s;
 }
 .footer-logo:hover img {
-  filter: invert(1) brightness(1.15) drop-shadow(0 1px 8px rgba(201,168,76,0.35));
+  filter: invert(1) brightness(1.15) drop-shadow(0 1px 8px rgba(255,255,255,0.2));
 }
 
 .footer-brand p {
@@ -985,7 +986,7 @@ p { font-size: clamp(0.9rem, 1.2vw, 1rem); color: var(--cream-dim); max-width: 6
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 100%, rgba(201,168,76,0.07), transparent 60%);
+  background: radial-gradient(ellipse at 50% 100%, rgba(255,255,255,0.04), transparent 60%);
 }
 
 .page-header .container { position: relative; z-index: 1; }
@@ -1495,3 +1496,209 @@ p { font-size: clamp(0.9rem, 1.2vw, 1rem); color: var(--cream-dim); max-width: 6
   .modal-img { min-height: 260px; }
   .modal-info-col { padding: 1.5rem; }
 }
+
+/* ── CART ICON EN NAV ──────────────────────────────────── */
+.nav-cart-btn {
+  position: relative;
+  background: none;
+  border: 1px solid var(--border-soft);
+  color: var(--cream);
+  width: 2.2rem; height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s;
+  flex-shrink: 0;
+}
+.nav-cart-btn:hover { border-color: var(--gold); color: var(--gold); }
+.nav-cart-btn svg { width: 1rem; height: 1rem; pointer-events: none; }
+
+.cart-badge {
+  position: absolute;
+  top: -6px; right: -6px;
+  background: var(--gold);
+  color: var(--bg);
+  font-size: 0.55rem;
+  font-weight: 700;
+  font-family: var(--font-sans);
+  width: 1.1rem; height: 1.1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.3s, transform 0.3s var(--ease-out);
+}
+.cart-badge.visible { opacity: 1; transform: scale(1); }
+
+/* ── CART DRAWER ───────────────────────────────────────── */
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+.cart-overlay.open { opacity: 1; pointer-events: all; }
+
+.cart-drawer {
+  position: absolute;
+  top: 0; right: 0;
+  width: min(420px, 100%);
+  height: 100%;
+  background: var(--bg-2);
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.45s var(--ease-out);
+}
+.cart-overlay.open .cart-drawer { transform: translateX(0); }
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1.75rem;
+  border-bottom: 1px solid var(--border-soft);
+}
+.cart-header h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--cream);
+}
+.cart-header-right { display: flex; align-items: center; gap: 1rem; }
+
+.cart-count-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+}
+
+.cart-close {
+  background: none;
+  border: 1px solid var(--border-soft);
+  color: var(--cream-dim);
+  width: 2rem; height: 2rem;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s;
+}
+.cart-close:hover { border-color: var(--gold); color: var(--gold); }
+.cart-close svg { width: 14px; height: 14px; }
+
+.cart-items {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem 1.75rem;
+}
+.cart-items::-webkit-scrollbar { width: 3px; }
+.cart-items::-webkit-scrollbar-thumb { background: var(--border); }
+
+.cart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 1rem;
+  text-align: center;
+}
+.cart-empty svg { width: 3rem; height: 3rem; color: var(--border); }
+.cart-empty p { font-size: 0.9rem; color: var(--cream-dim); max-width: none; }
+.cart-empty a { font-size: 0.72rem; }
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-soft);
+  animation: fadeUp 0.35s var(--ease-out) forwards;
+}
+
+.cart-item-img {
+  width: 4.5rem; height: 4.5rem;
+  background-size: cover;
+  background-position: center top;
+  border: 1px solid var(--border-soft);
+  flex-shrink: 0;
+}
+
+.cart-item-info h4 {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+}
+.cart-item-info p {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--cream-dim);
+  text-transform: uppercase;
+  max-width: none;
+  margin-bottom: 0.35rem;
+}
+.cart-item-price {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--cream);
+}
+
+.cart-item-remove {
+  background: none;
+  border: none;
+  color: var(--cream-dim);
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: color 0.3s;
+  line-height: 1;
+  font-size: 1.1rem;
+  align-self: flex-start;
+}
+.cart-item-remove:hover { color: #ff4444; }
+
+.cart-footer {
+  padding: 1.25rem 1.75rem 1.75rem;
+  border-top: 1px solid var(--border-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.cart-total-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+}
+.cart-total-amount {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--cream);
+}
+
+.cart-note {
+  font-size: 0.68rem;
+  color: rgba(153,153,153,0.6);
+  text-align: center;
+  max-width: none;
+  line-height: 1.6;
+}
+
+.cart-footer .btn { justify-content: center; width: 100%; }
