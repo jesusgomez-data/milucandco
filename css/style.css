@@ -1702,3 +1702,11 @@ p { font-size: clamp(0.9rem, 1.2vw, 1rem); color: var(--cream-dim); max-width: 6
 }
 
 .cart-footer .btn { justify-content: center; width: 100%; }
+
+/* ── FIX: parallax no funciona en móvil (iOS Safari) ──── */
+@media (max-width: 768px), (hover: none) {
+  .hero-bg {
+    background-attachment: scroll;
+    background-position: center 15%;
+  }
+}
