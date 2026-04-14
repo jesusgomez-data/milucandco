@@ -8,8 +8,12 @@ const WHATSAPP_NUMBER = '34662062157';
 /* ── SCROLL: Header ─────────────────────────────────────── */
 const header = document.getElementById('site-header');
 if (header) {
+  let lastY = 0;
   window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 40);
+    const y = window.scrollY;
+    header.classList.toggle('scrolled', y > 40);
+    header.classList.toggle('hidden', y > 80 && y > lastY);
+    lastY = y;
   }, { passive: true });
 }
 
