@@ -187,14 +187,29 @@ p { font-size: clamp(0.9rem, 1.2vw, 1rem); color: var(--cream-dim); max-width: 6
 .nav-logo {
   display: flex;
   align-items: center;
-  padding: 5px 10px;
-  outline: 1px solid rgba(255,255,255,0.35);
-  outline-offset: 5px;
-  transition: transform 0.35s var(--ease-out), outline-color 0.4s;
+  padding: 6px 10px;
+  transition: transform 0.35s var(--ease-out);
+  background:
+    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) top left    / 1px 10px no-repeat,
+    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) top left    / 10px 1px no-repeat,
+    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) top right   / 1px 10px no-repeat,
+    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) top right   / 10px 1px no-repeat,
+    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) bottom left / 1px 10px no-repeat,
+    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) bottom left / 10px 1px no-repeat,
+    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) bottom right/ 1px 10px no-repeat,
+    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) bottom right/ 10px 1px no-repeat;
 }
 .nav-logo:hover {
   transform: translateY(-1px);
-  outline-color: rgba(255,255,255,0.85);
+  background:
+    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) top left    / 1px 10px no-repeat,
+    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) top left    / 10px 1px no-repeat,
+    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) top right   / 1px 10px no-repeat,
+    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) top right   / 10px 1px no-repeat,
+    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) bottom left / 1px 10px no-repeat,
+    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) bottom left / 10px 1px no-repeat,
+    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) bottom right/ 1px 10px no-repeat,
+    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) bottom right/ 10px 1px no-repeat;
 }
 /* Logo oscuro sobre fondo blanco → invert hace blanco sobre negro → screen elimina el negro */
 .nav-logo img {
@@ -882,12 +897,18 @@ p { font-size: clamp(0.9rem, 1.2vw, 1rem); color: var(--cream-dim); max-width: 6
   display: inline-flex;
   align-items: center;
   margin-bottom: 1rem;
-  padding: 4px 8px;
-  outline: 1px solid rgba(255,255,255,0.25);
-  outline-offset: 5px;
-  transition: outline-color 0.4s;
+  padding: 6px 10px;
+  background:
+    linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)) top left    / 1px 10px no-repeat,
+    linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)) top left    / 10px 1px no-repeat,
+    linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)) top right   / 1px 10px no-repeat,
+    linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)) top right   / 10px 1px no-repeat,
+    linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)) bottom left / 1px 10px no-repeat,
+    linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)) bottom left / 10px 1px no-repeat,
+    linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)) bottom right/ 1px 10px no-repeat,
+    linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)) bottom right/ 10px 1px no-repeat;
+  transition: background 0.4s;
 }
-.footer-logo:hover { outline-color: rgba(255,255,255,0.6); }
 .footer-logo img {
   height: 40px;
   width: auto;
