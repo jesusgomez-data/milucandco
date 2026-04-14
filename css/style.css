@@ -188,28 +188,25 @@ p { font-size: clamp(0.9rem, 1.2vw, 1rem); color: var(--cream-dim); max-width: 6
   display: flex;
   align-items: center;
   padding: 6px 10px;
-  transition: transform 0.35s var(--ease-out);
-  background:
-    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) top left    / 1px 10px no-repeat,
-    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) top left    / 10px 1px no-repeat,
-    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) top right   / 1px 10px no-repeat,
-    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) top right   / 10px 1px no-repeat,
-    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) bottom left / 1px 10px no-repeat,
-    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) bottom left / 10px 1px no-repeat,
-    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) bottom right/ 1px 10px no-repeat,
-    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)) bottom right/ 10px 1px no-repeat;
+  transition: transform 0.35s var(--ease-out), background-size 0.55s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)),
+    linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)),
+    linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)),
+    linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)),
+    linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)),
+    linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)),
+    linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)),
+    linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65));
+  background-position: top left, top left, top right, top right, bottom left, bottom left, bottom right, bottom right;
+  background-repeat: no-repeat;
+  background-size: 1px 11px, 11px 1px, 1px 11px, 11px 1px, 1px 11px, 11px 1px, 1px 11px, 11px 1px;
 }
-.nav-logo:hover {
-  transform: translateY(-1px);
-  background:
-    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) top left    / 1px 10px no-repeat,
-    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) top left    / 10px 1px no-repeat,
-    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) top right   / 1px 10px no-repeat,
-    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) top right   / 10px 1px no-repeat,
-    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) bottom left / 1px 10px no-repeat,
-    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) bottom left / 10px 1px no-repeat,
-    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) bottom right/ 1px 10px no-repeat,
-    linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) bottom right/ 10px 1px no-repeat;
+.nav-logo:hover { transform: translateY(-1px); opacity: 0.8; }
+
+/* Al hacer scroll: las esquinas se expanden hasta formar el borde completo */
+.site-header.scrolled .nav-logo {
+  background-size: 1px 51%, 51% 1px, 1px 51%, 51% 1px, 1px 51%, 51% 1px, 1px 51%, 51% 1px;
 }
 /* Logo oscuro sobre fondo blanco → invert hace blanco sobre negro → screen elimina el negro */
 .nav-logo img {
